@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./detail.css">
+    <title>Document</title>
+    <style>
+        section{
+            height:50vh;
+        }
+
+        section >div{
+            position: absolute;
+            background: transparent;
+            text-align: center;
+            margin-top: 6vh;
+        }
+
+        section >div p{
+            font-size:20px;
+            padding:3%;
+        }
+
+        .para{
+            background-image: url('./gallery/red splatter.jpg');
+            height: 50vh;
+            width:80vw;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transform: translateX(12%);
+        }
+
+       .para:nth-child(3){
+           margin-bottom:2%;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="image">
+                <img src="./gallery/artgallery.png" alt="logo" class="logoimage" />
+                <span>Art Gallery</span>
+            </div>
+            <div class="sear">
+                <input type="text" placeholder="search" class="txtsrch">
+            <button type="button" class="btnsrch">Search</button>
+        
+            <button type="button" class="loginbtn">Login</button>
+            <button type="button" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+
+        <nav>
+            <button class="catShow">
+                <img src="./gallery/icons8-list-50.png" class="toggle" />
+            </button>
+            <a class="menuitem" href="index.html">Home</a>
+            <a class="menuitem" href="todaydeal.html">Today's Deals</a>
+            <a class="menuitem" href="shopping.html">Shopping Cart <span class="store" style="display:none;">1</span></a>
+            <a class="menuitem" href="checkout.html">Checkout <span class="total" style="display:none">1</span></a>
+            <a class="menuitem" href="allitem.html">item(s)</a>
+            <a class="menuitem" href="contactus.html">Contact Us</a>
+        </nav>
+
+        <div class="categories">
+            <a class="submenu">Water color painting</a>
+            <a class="submenu">Oil painting</a>
+            <a class="submenu">Glass painting</a>
+            <a class="submenu">Ink Wash painting</a>
+            <a class="submenu">Digital painting</a>
+            <a class="submenu">Spray Painting</a>
+            <a class="submenu">Acrylic painting</a>
+            <a class="submenu">Pastel painting</a>
+        </div>
+    </header>
+    <section>
+        <div class="about">
+            <h2>About Us</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque totam animi repudiandae unde esse veritatis voluptas accusamus ad et omnis modi commodi fugit tempore ducimus illo iste dicta, aliquam saepe!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, omnis inventore! Temporibus unde vitae magni sapiente, error eaque distinctio labore earum corrupti fuga blanditiis sunt assumenda beatae sequi adipisci quibusdam?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ducimus reprehenderit. Aspernatur, perferendis, et, recusandae consequuntur eaque fuga minima optio blanditiis consectetur voluptate aperiam beatae ea iusto assumenda accusantium? Corrupti!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat amet obcaecati consequuntur, et porro eaque quam neque autem unde quia! Facilis voluptatibus in minus nemo doloremque, itaque blanditiis magnam quia.
+            </p>
+        </div>
+    </section>
+    <div class="para">
+        
+    </div>
+    <section>
+        <div class="deliveryinfo">
+            <h2>Delivery Information</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque totam animi repudiandae unde esse veritatis voluptas accusamus ad et omnis modi commodi fugit tempore ducimus illo iste dicta, aliquam saepe!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, omnis inventore! Temporibus unde vitae magni sapiente, error eaque distinctio labore earum corrupti fuga blanditiis sunt assumenda beatae sequi adipisci quibusdam?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ducimus reprehenderit. Aspernatur, perferendis, et, recusandae consequuntur eaque fuga minima optio blanditiis consectetur voluptate aperiam beatae ea iusto assumenda accusantium? Corrupti!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat amet obcaecati consequuntur, et porro eaque quam neque autem unde quia! Facilis voluptatibus in minus nemo doloremque, itaque blanditiis magnam quia.
+            </p>
+        </div>
+
+    </section>
+    <div class="para">
+        
+    </div>
+    <section>
+        <div class="privacy">
+            <h2>Privacy Policy</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque totam animi repudiandae unde esse veritatis voluptas accusamus ad et omnis modi commodi fugit tempore ducimus illo iste dicta, aliquam saepe!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, omnis inventore! Temporibus unde vitae magni sapiente, error eaque distinctio labore earum corrupti fuga blanditiis sunt assumenda beatae sequi adipisci quibusdam?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ducimus reprehenderit. Aspernatur, perferendis, et, recusandae consequuntur eaque fuga minima optio blanditiis consectetur voluptate aperiam beatae ea iusto assumenda accusantium? Corrupti!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat amet obcaecati consequuntur, et porro eaque quam neque autem unde quia! Facilis voluptatibus in minus nemo doloremque, itaque blanditiis magnam quia.
+            </p>
+        </div>
+    </section>
+    <div class="para">
+        
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.cart').hide();
+            $('.categories').hide();
+
+            $('.catShow').click(function(){
+                $('.categories').toggle();
+            })
+
+            $('#buy').click(function(){
+                $('.cart').show();
+            })
+
+            $('.checkout').click(function(){
+                $('.total').show();
+            })
+
+            $('.addCart').click(function(){
+                $('.store').show();
+            })
+
+
+            $('.cancle').click(function(){
+                $('.cart').hide();
+            })
+        })
+    </script>
+</body>
+</html>

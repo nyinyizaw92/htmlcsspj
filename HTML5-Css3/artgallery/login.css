@@ -1,0 +1,132 @@
+.auth{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    z-index:500;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    width: 500px;
+    height: 400px;
+    background: white;
+    box-shadow: -2px 5px 69px 28px rgb(12, 12, 12);
+}
+
+.login,.sign .head{
+    background:#ececfa;
+    margin-bottom:2vh;
+}
+
+.login .head h3{
+    padding:3%;
+
+}
+
+.login .head span{
+    float:right !important;
+    margin-top: -8%;
+    margin-right: 2%;
+    color: red;
+    font-size: 19px;
+
+}
+
+.login .head span:hover{
+    cursor:pointer;
+}
+
+.login .loginBox input{
+    width: 90%;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid #ccc;
+    padding: 2%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.login .loginBox span{
+    position: absolute;
+    margin-left: -36vw;
+    margin-top: 4vh;
+    opacity:0.3;
+}
+
+.login .loginBox input[type="submit"]{
+    width:94%;
+    margin-top:6vh;
+    background:#54b7d6;
+}
+
+.login .loginBox input:focus ~ span,
+.login .loginBox input:valid ~span{
+    opacity:0;
+}
+
+.sign{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    width: 500px;
+    height: 300px;
+    background: white;
+    box-shadow: -2px 5px 69px 28px rgb(12, 12, 12);
+}
+
+.sign,.sign .head{
+    background:#ececfa;
+    margin-bottom:2vh;
+}
+
+.sign .head h3{
+    padding:3%;
+
+}
+
+.sign .head span{
+    float:right !important;
+    margin-top: -8%;
+    margin-right: 2%;
+    color: red;
+    font-size: 19px;
+
+}
+
+.sign .head span:hover{
+    cursor:pointer;
+}
+
+.sign .loginBox input{
+    width: 90%;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid #ccc;
+    padding: 2%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.sign .loginBox span{
+    position: absolute;
+    margin-left: -36vw;
+    margin-top: 4vh;
+    opacity:0.3;
+}
+
+.sign .loginBox input[type="submit"]{
+    width:94%;
+    margin-top:6vh;
+    background:#54b7d6;
+}
+
+.sign .loginBox input:focus ~ span,
+.sign .loginBox input:valid ~span{
+    opacity:0;
+}

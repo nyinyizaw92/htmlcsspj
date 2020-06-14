@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./detail.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="image">
+                <img src="./gallery/artgallery.png" alt="logo" class="logoimage" />
+                <span>Art Gallery</span>
+            </div>
+            <div class="sear">
+                <input type="text" placeholder="search" class="txtsrch">
+            <button type="button" class="btnsrch">Search</button>
+        
+            <button type="button" class="loginbtn">Login</button>
+            <button type="button" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+
+        <nav>
+            <button class="catShow">
+                <img src="./gallery/icons8-list-50.png" class="toggle" />
+            </button>
+            <a class="menuitem" href="index.html">Home</a>
+            <a class="menuitem" href="todaydeal.html">Today's Deals</a>
+            <a class="menuitem" href="shopping.html">Shopping Cart <span class="store" style="display:none;">1</span></a>
+            <a class="menuitem" href="checkout.html">Checkout <span class="total" style="display:none">1</span></a>
+            <a class="menuitem" href="allitem.html">item(s)</a>
+            <a class="menuitem" href="contactus.html">Contact Us</a>
+        </nav>
+
+        <div class="categories">
+            <a class="submenu">Water color painting</a>
+            <a class="submenu">Oil painting</a>
+            <a class="submenu">Glass painting</a>
+            <a class="submenu">Ink Wash painting</a>
+            <a class="submenu">Digital painting</a>
+            <a class="submenu">Spray Painting</a>
+            <a class="submenu">Acrylic painting</a>
+            <a class="submenu">Pastel painting</a>
+        </div>
+    </header>
+    <section>
+        <div class="img-magnifier-container">
+            <img src="./gallery/Intriguing.jpg" class="detailimage" id="myimage">
+        </div>
+        <div class="text">
+            <p>Artist <span class="art">: NNZ</span></p>
+            <p>Title <span class="title">: Lorem ipsum dolor</span></p>
+            <p>Width<span class="width">: 3'</span></p>
+            <p>Height<span class="height">: 5'</span></p>
+            <p>Type <span class="type">: Water Color Painting</span></p>
+            <p>Price <span class="price"> : $18.44<strike>$254.21</strike></span></span></p>
+
+            <button type="button" class="addTo" id="buy">Add to Cart</button>
+        </div>
+
+        <div class="cart">
+            <div class="item">
+                <img src="./gallery/Intriguing.jpg" alt="logo" class="logoimage" />
+                <p>Lorem ipsum dolor</p>
+                <p>$18.44</p>
+            </div>
+            <div class="sub">
+                <button class="addCart">Cart</button>
+                <button class="checkout">Checkout</button>
+                <button class="cancle">Cancle</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function(){
+            $('.cart').hide();
+            $('.categories').hide();
+
+            $('.catShow').click(function(){
+                $('.categories').toggle();
+            })
+
+            $('#buy').click(function(){
+                $('.cart').show();
+            })
+
+            $('.checkout').click(function(){
+                $('.total').show();
+            })
+
+            $('.addCart').click(function(){
+                $('.store').show();
+            })
+
+
+            $('.cancle').click(function(){
+                $('.cart').hide();
+            })
+        })
+    </script>
+</body>
+</html>

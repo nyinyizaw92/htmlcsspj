@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+body{
+    overflow-x:hidden;
+}
+
+header{
+    line-height:50px;
+    
+    height:10vh;
+    display:flex;
+}
+
+header .logo{
+    margin-left:5rem;
+    width:50vw;
+}
+
+header .logo img
+{
+    width: 80px;
+    height: auto;
+}
+
+header .logo span{
+   
+
+
+}
+
+header nav ul{
+    display:flex;
+    list-style:none;
+    justify-content: space-between;
+}
+
+header nav ul li
+{
+    width:120px;
+    text-align: center;
+    transition:0.5s;
+   
+}
+
+
+header nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:15px;
+   
+}
+
+header nav ul li:hover{
+    color:white;
+    background-color:gray;
+    border-radius:5px;
+}
+
+section .section1
+{
+    height:90vh;
+    width:100%;
+    background-image: url('../image/skysky.jpeg');
+    background-size:cover;
+    background-position: center;
+}
+
+section .section1 .highway{
+    background-image: url('../image/streethighway.jpg');
+    height:200px;
+    width: 500%;
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:1;
+    background-repeat: repeat-x;
+    animation:highway 5s linear infinite;
+}
+@keyframes highway{
+    100%{
+        transform:translateX(-2400px);
+    }
+}
+
+section .section1 .car{
+    width:400px;
+    left:50%;
+    bottom:100px;
+    transform:translateX(-50%);
+    position:absolute;
+    z-index:2;
+
+}
+
+section .section1 .car img{
+    width:100%;
+    animation:car 1s linear infinite;
+}
+
+section .section1 .wheel{
+    left:50%;
+    bottom:178px;
+    transform:translateX(-50%);
+    position:absolute;
+    z-index:2
+}
+
+section .section1 .wheel img{
+    width:72px;
+    height:72px;
+    animation:wheel 1s linear infinite;
+}
+@keyframes wheel{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+section .section1 .wheel .back-wheel{
+    left:-132px;
+    position:absolute;
+}
+
+section .section1 .wheel .front-wheel{
+    left:68px;
+    position:absolute;
+}
+
+@keyframes car{
+    100%{
+        transform:translateY(-1px);
+    }
+
+    50%{
+        transform:translateY(-1px);
+    }
+
+    0%{
+        transform:translateY(-1px);
+    }
+}
+
+section .section2{
+    height:100vh;
+    width: 102vw;
+    transform:rotate(-2deg);
+    margin-left:-12px;
+    transition:0.5s
+}
+
+section .section2 .card{
+    transform: rotate(2deg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 7rem;
+}
+
+section .section2 .card figure{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    transform: translate(1rem, 3rem);
+}
+
+section .section2 .card figure:nth-child(1)
+{
+    transform: rotate(-135deg);
+    margin-left: -30rem;
+}
+
+section .section2 .card .show{
+    transform:rotate(0deg) !important;
+    margin-left:0 !important;
+    transition:1.5s !important;
+}
+
+section .section2 .card figure:nth-child(2){
+    transform: translate(3rem,25rem);
+   
+}
+
+section .section2 .card figure:nth-child(3)
+{
+    transform: rotate(135deg);
+    margin-right: -30rem;
+}
+
+section .section2 .card .show{
+    transform:rotate(0deg) !important;
+    margin-right:0 !important;
+    transition:1.5s !important;
+}
+
+section .section2 .card .show
+{
+    display:block !important;
+    transform:translateY(3rem) !important;
+    transition:1.5s !important;
+}
+
+section .section2 .card figure figcaption{
+    background:white;
+    text-align: center;
+    padding:2px;
+    font-size:15px;
+}
+
+section .section2 .card figure img{
+    width:100%;
+    height:100%;
+}
+
+section .animated{
+    height:100vh;
+    width: 102vw;
+    transform:rotate(-2deg);
+    margin-left:-12px;
+}
+
+section .section3{
+    height:100vh;
+    margin-top:20px;
+    display:flex;
+    align-items: center;
+}
+
+section .section3 .aboutus{
+    width: 50vw;
+    padding: 50px;
+    text-align: center;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+section .section3 .info{
+    width: 50vw;
+    padding: 50px;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateX(35rem);
+    opacity: 0.2;
+}
+
+section .section3 .leftTrans
+{
+    transform: scale(1) !important;
+}
+
+section .section3 .rightTrans
+{
+    transform: translateX(0rem) !important;
+    opacity:1 !important;
+}
+
+
+.slid{
+    width: 500px;
+    height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ccc;
+    position: relative;
+}
+
+.slide_image{
+    position:absolute;
+    width: 100%;
+    height:100%;
+}
+
+.slide_image img{
+    width: 100%;
+    height:100%;
+}
+
+.slid .move .right{
+    width: 50px;
+    height:50px;
+    background:black;
+    position:absolute;
+    top:0;
+    left:-10vw;
+}
+
+.slid .move .left{
+    width: 50px;
+    height:50px;
+    background:black;
+    position:absolute;
+    top:0;
+    left:50vw;
+}
+
+
+
+
+
+
+/* section .animat{
+    background:black;
+} */

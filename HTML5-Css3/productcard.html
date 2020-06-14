@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            min-height:100vh;
+            background:#131313;
+            
+        }
+
+        .container{
+            position:relative;
+        }
+
+        .container .card{
+            position:relative;
+            width: 300px;
+            height:450px;
+            background:#232323;
+            border-radius:20px;
+            overflow:hidden;
+        }
+
+        .container .card:before{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:#9bdc28;
+            clip-path:circle(150px at 90% 10%);
+            transition:0.5s ease-in-out;
+        }
+
+        .container .card:hover:before{
+            clip-path:circle(300px at 80% -20%)
+        }
+
+        .container .card:after{
+            content:'Nike';
+            position:absolute;
+            top:30%;
+            left:-20%;
+            font-size:12em;
+            font-weight:800;
+            font-style:italic;
+            color:rgba(255,255,255,0.04);
+        }
+
+        .container .card .imgBx{
+            position:absolute;
+            top:50%;
+            transform:translateY(-50%);
+            width:100%;
+            z-index:100000;
+            height:220px;
+            transition:0.5s;
+        }
+
+        .container .card:hover .imgBx{
+            top:0%;
+            transform:translateY(0%);
+        }
+
+        .container .card .imgBx img{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%) rotate(-25deg);
+            width:250px;
+        }
+
+        .container .card .containerBx{
+            position:absolute;
+            bottom:0;
+            width:100%;
+            height:100px;
+            text-align:center;
+            transition:1s;
+            z-index:10;
+        }
+
+        .container .card:hover .containerBx
+        {
+            height:210px
+        }
+
+        .container .card .containerBx h2{
+            position:relative;
+            font-weight:600;
+            letter-spacing:1px;
+            color:#fff;
+        }
+
+        .container .card .containerBx .size{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:8px 20px;
+            transition:0.5s;
+        }
+        .container .card .containerBx .size h3{
+            font-weight:300;
+            font-size:14px;
+            text-transform: uppercase;
+            letter-spacing:2px;
+            margin-right:10px;
+        }
+
+        .container .card .containerBx .size span{
+            width:26px;
+            height:26px;
+            text-align:center;
+            line-height:26px;
+            font-size:14px;
+            display:inline-block;
+            color:#111;
+            background:#fff;
+            margin:0 5px;
+            transition:0.5;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="./image/person-holding-white-sneakers-3194609.jpg" alt="">
+            </div>
+            <div class="containerBx">
+                <h2>Nike Shoes</h2>
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>7</span>
+                    <span>7</span>
+                    <span>7</span>
+                    <span>7</span>
+                </div>
+                <div class="color">
+                    <h3>Color:</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

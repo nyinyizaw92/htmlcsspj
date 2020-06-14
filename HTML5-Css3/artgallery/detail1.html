@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script> -->
+    <link rel="stylesheet" href="./jquery.wm-zoom-1.0.min.css">
+    <style>
+
+        img{
+            width:500px !important;
+            transform:translate(5%,5%)
+        }
+     
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wm-zoom-container my-zoom-1">
+        <div class="wm-zoom-box">
+          <img src="./gallery/Intriguing.jpg" 
+          class="wm-zoom-default-img" alt="alternative text" 
+          data-hight-src="./gallery/Intriguing.jpg" 
+         
+          >
+        </div>
+    </div>
+    <!-- <div class="wm-zoom-container demo">
+        <div class="wm-zoom-box">
+        <img src="./gallery/Intriguing.jpg" class="wm-zoom-default-img"
+             data-hight-src="./gallery/Intriguing.jpg" 
+             data-loader-src="./gallery/Intriguing.jpg">
+        </div>
+      </div>
+      -->
+      <script src="./jquery-1.11.1.js"></script>
+    <script src="jquery.wm-zoom-1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.my-zoom-1').WMZoom({
+             config:{
+                position:'bottom',
+                marginLeft:50
+             }
+            });
+            // $('.my-zoom-2').WMZoom({
+            //     config : {
+            //         inner : true
+            //     }
+            // });
+        });
+    </script>
+</body>
+</html>

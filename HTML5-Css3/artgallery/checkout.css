@@ -1,0 +1,72 @@
+section form{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section form .inputBox{
+    width: 100%;
+    margin-bottom:30px;
+}
+
+section form .inputBox input,textarea{
+    width: 100%;
+    padding:5px 0;
+    font-size:18px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #777;
+    resize: none;
+}
+
+section form .inputBox textarea{
+    min-height:120px;
+}
+
+
+section form .inputBox span{
+    position:absolute;
+    left:0;
+    padding:5px 0;
+    font-size:18px;
+    font-weight:300;
+    color:#333;
+    transition:0.5s;
+    pointer-events:none;
+}
+
+section form .inputBox input:focus ~ span,
+section form .inputBox textarea:focus ~ span,
+section form .inputBox input:valid ~ span,
+section form .inputBox textarea:valid ~ span
+{
+    transform:translateY(-20px);
+    font-size:12px;
+    font-weight:400;
+    letter-spacing:1px;
+    color:blue;
+}
+
+section form .inputBox .kbz{
+    background-image: url('./gallery/kbz.png');
+}
+
+section form .inputBox .aya{
+    background-image: url('./gallery/ayabank.jpeg');
+    margin-left:43%;
+}
+
+section form .inputBox .kbz,.aya{
+    position:absolute;
+    width: 250px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+}

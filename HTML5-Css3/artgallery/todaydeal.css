@@ -1,0 +1,157 @@
+/* html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  } */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  /* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  } */
+
+
+
+section{
+    display:flex;
+    flex-direction:column;
+}
+
+section .dealtitle{
+    width: 93vw;
+    background: #ececfa;
+    padding: 1%;
+    margin: 2% 0% 0% 2%;
+}
+
+ section .deal{
+    display:flex;
+}
+
+/*  section #right{
+    background-image:url('./gallery/icons8-double-left-16.png');
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position:center;
+    border:0;
+    position:absolute;
+    top: 58%;
+    left: 2%;
+    z-index:5;
+}
+
+section #left{
+    background-image:url('./gallery/icons8-double-right-16.png');
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position:center;
+    border:0;
+    top: 58%;
+    right: 2%;
+    z-index:5;
+    position: absolute;
+} */
+
+
+section .deal article{
+    width: 230px !important;
+    padding: 2%;
+    transition:0.5s;
+    padding-bottom:0;
+}
+
+section .deal article:hover{
+    transform:scale(1.1) !important;
+}
+
+/* section .moveright{
+    width: 230px;
+    padding: 2%;
+    transition:0.5s;
+    margin-left:-20%;
+
+}
+
+section .moveleft{
+    width: 230px;
+    padding: 2%;
+    transition:0.5s;
+    margin-right:20%;
+
+} */
+
+section .deal article:first-child{
+    margin-left: 2%;
+}
+
+section .deal article a{
+    text-align:center;
+}
+
+section .deal article img{
+    width:230px;
+    height:250px;
+}
+
+
+/* section .one article p{
+    margin-top:5%;
+    font-weight: 1000;
+}
+
+section .one article p span{
+    font-weight: 10 !important;
+} */
+
+/* section .deal article p .one {
+    margin-left:5%;
+}
+
+section .deal article p .two{
+    margin-left:3%;
+}
+
+section .deal article p .three{
+    margin-left:8%;
+}
+section .deal article .col3 .img1{
+    width:17vw;
+    height:20vh;
+ 
+}*/
+
+section .deal article h3{
+  
+    color:#04bfbf;
+}
+
+section .deal article strike{
+    font-size:1vw;
+    padding-left:3%;
+} 
